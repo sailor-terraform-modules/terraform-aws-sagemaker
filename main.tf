@@ -71,7 +71,7 @@ resource "aws_sagemaker_notebook_instance" "ni" {
   role_arn                = aws_iam_role.role21.arn
   instance_type           = var.instance_type
   default_code_repository = aws_sagemaker_code_repository.example.code_repository_name
-
+  encrypted = true
   tags = {
     Name = "demo"
   }
