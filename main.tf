@@ -1,5 +1,5 @@
 resource "aws_sagemaker_domain" "example" {
-  domain_name = var.domain_nameva
+  domain_name = var.domain_name
   auth_mode   = var.auth_mode
   vpc_id      = var.vpc_id
   subnet_ids  = [aws_subnet.main.id]
