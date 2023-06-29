@@ -19,6 +19,8 @@ jobs:
         uses: hashicorp/setup-terraform@v1
         with:
           terraform_version: '1.1.2'
+      - name: terraform format
+        run: terraform fmt
       - name: terraform init
         run: terraform init --input=false
       - name: terraform format
