@@ -118,3 +118,7 @@ variable "region" {
   type        = string
   description = "region"
 }
+variable "kms_key_id" {
+    type = string
+    description = " The AWS Key Management Service."
+}
